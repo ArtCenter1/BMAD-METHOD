@@ -1,0 +1,33 @@
+workflow:
+  id: short-film-pre-production
+  name: Short Film Pre-Production Workflow
+  description: >-
+    A streamlined workflow for the pre-production of a short film.
+  phases:
+    planning:
+      - agent: director
+        task: create-doc
+        input: screenplay.md
+        output: directors-vision.md
+      - agent: producer
+        task: develop-budget
+        input: screenplay.md
+        output: film-budget.md
+    visualization:
+      - agent: director
+        task: create-shot-list
+        input: screenplay.md
+        output: shot-list.md
+      - agent: storyboard-artist
+        task: create-storyboards
+        input:
+          - screenplay.md
+          - shot-list.md
+        output: storyboards.md
+    final_prep:
+      - agent: producer
+        task: execute-checklist
+        input: pre-production-readiness-checklist.md
+        output: pre-production-signoff.md
+  completion_criteria:
+    - pre-production-signoff.md exists

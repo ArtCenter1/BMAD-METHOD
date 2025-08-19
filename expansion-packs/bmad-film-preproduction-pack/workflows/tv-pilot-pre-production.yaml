@@ -1,0 +1,58 @@
+workflow:
+  id: tv-pilot-pre-production
+  name: TV Pilot Pre-Production Workflow
+  description: >-
+    A workflow for the pre-production of a TV pilot, focusing on establishing the show's look and feel.
+  phases:
+    series_bible_and_vision:
+      - agent: narrative-designer
+        task: create-doc # This would be a more specific task
+        input: pilot-script.md
+        output: series-bible.md
+      - agent: director
+        task: create-doc
+        input: pilot-script.md
+        output: pilot-directors-vision.md
+    planning_and_budgeting:
+      - agent: producer
+        task: develop-budget
+        input:
+          - pilot-script.md
+          - series-bible.md
+        output: pilot-budget.md
+      - agent: producer
+        task: create-doc # This would be a more specific task
+        input: pilot-script.md
+        output: pilot-production-schedule.md
+    design_and_visualization:
+      - agent: production-designer
+        task: design-production
+        input:
+          - pilot-script.md
+          - series-bible.md
+          - pilot-directors-vision.md
+        output: show-production-design-brief.md
+      - agent: cinematographer
+        task: create-doc # This would be a more specific task
+        input:
+          - pilot-script.md
+          - pilot-directors-vision.md
+        output: show-lookbook.md
+    shot_planning:
+      - agent: director
+        task: create-shot-list
+        input: pilot-script.md
+        output: pilot-shot-list.md
+      - agent: storyboard-artist
+        task: create-storyboards
+        input:
+          - pilot-script.md
+          - pilot-shot-list.md
+        output: pilot-storyboards.md
+    final_prep:
+      - agent: producer
+        task: execute-checklist
+        input: pre-production-readiness-checklist.md
+        output: pilot-pre-production-signoff.md
+  completion_criteria:
+    - pilot-pre-production-signoff.md exists

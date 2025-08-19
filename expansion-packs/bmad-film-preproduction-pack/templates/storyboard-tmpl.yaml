@@ -1,0 +1,38 @@
+---
+template:
+  id: storyboard-tmpl
+  name: Storyboard
+  version: 1.0
+  description: A template for creating a storyboard sequence.
+  output:
+    format: markdown
+    filename: "scene-{{scene_number}}-storyboards.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: scene_info
+    title: "Scene {{scene_number}}: {{scene_name}}"
+    instruction: "Provide general details for this storyboard sequence."
+    elicit: true
+
+  - id: panels
+    title: Storyboard Panels
+    instruction: "For each panel, provide the image and description."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: panel_entry
+        title: "Panel {{panel_number}}"
+        template: |
+          ---
+          **Panel {{panel_number}}**
+
+          ![{{panel_description}}]({{image_url}})
+
+          **Description:** {{panel_description}}
+          **Shot:** {{shot_number_from_shot_list}}
+          **Dialogue/Action:** {{dialogue_or_action}}
+          **Notes:** {{camera_notes}}

@@ -1,0 +1,32 @@
+---
+template:
+  id: shot-list-tmpl
+  name: Shot List
+  version: 1.0
+  description: A template for creating a detailed shot list for a scene.
+  output:
+    format: markdown
+    filename: "scene-{{scene_number}}-shot-list.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: scene_header
+    title: "Scene {{scene_number}}: {{scene_name}}"
+    instruction: "Provide general details for this scene."
+    elicit: true
+
+  - id: shots
+    title: Shot Details
+    instruction: "For each shot in the scene, provide the following details."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: shot_entry
+        title: "Shot {{shot_number}}"
+        template: |
+          | **Shot** | **Setup** | **Size** | **Angle** | **Movement** | **Lens** | **Action** | **Notes** |
+          |----------|-----------|----------|-----------|--------------|----------|------------|---------|
+          | {{shot_number}} | {{setup_letter}} | {{shot_size}} | {{camera_angle}} | {{camera_movement}} | {{lens_mm}}mm | {{action_description}} | {{shot_notes}} |

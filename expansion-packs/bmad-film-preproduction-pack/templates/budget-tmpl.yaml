@@ -1,0 +1,55 @@
+---
+template:
+  id: budget-tmpl
+  name: Film Budget
+  version: 1.0
+  description: A template for creating a film production budget.
+  output:
+    format: markdown
+    filename: "{{film_title}}-budget.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: budget_summary
+    title: Budget Summary
+    template: |
+      # Film Budget: {{film_title}}
+
+      | Category | Estimated Cost | Notes |
+      |---|---|---|
+      | **Total Above the Line** | ${{total_above_the_line}} | |
+      | **Total Below the Line (Production)** | ${{total_production}} | |
+      | **Total Below the Line (Post-Production)** | ${{total_post_production}} | |
+      | **Sub-Total** | **${{sub_total}}** | |
+      | **Contingency ({{contingency_percentage}}%)** | ${{contingency_amount}} | |
+      | **GRAND TOTAL** | **${{grand_total}}** | |
+
+  - id: above_the_line
+    title: Above The Line Costs
+    repeatable: true
+    elicit: true
+    sections:
+      - id: atl_entry
+        template: |
+          - **{{item_name}}**: ${{cost}} - *{{notes}}*
+
+  - id: below_the_line_prod
+    title: Below The Line - Production Costs
+    repeatable: true
+    elicit: true
+    sections:
+      - id: btl_prod_entry
+        template: |
+          - **{{item_name}}**: ${{cost}} - *{{notes}}*
+
+  - id: below_the_line_post
+    title: Below The Line - Post-Production Costs
+    repeatable: true
+    elicit: true
+    sections:
+      - id: btl_post_entry
+        template: |
+          - **{{item_name}}**: ${{cost}} - *{{notes}}*

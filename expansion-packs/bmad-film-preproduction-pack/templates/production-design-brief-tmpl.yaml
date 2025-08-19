@@ -1,0 +1,67 @@
+---
+template:
+  id: production-design-brief-tmpl
+  name: Production Design Brief
+  version: 1.0
+  description: A template for creating a production design brief.
+  output:
+    format: markdown
+    filename: "{{film_title}}-production-design-brief.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: overview
+    title: Overview
+    template: |
+      # Production Design Brief: {{film_title}}
+
+      ## Overall Vision
+      {{overall_vision}}
+
+      ## Color Palette
+      {{color_palette_description}}
+
+      ## Key Textures & Materials
+      {{textures_and_materials}}
+
+  - id: sets_locations
+    title: Sets & Locations
+    repeatable: true
+    elicit: true
+    sections:
+      - id: set_entry
+        title: "Set/Location: {{set_name}}"
+        template: |
+          ### {{set_name}}
+          **Description:** {{set_description}}
+          **Mood Board:** {{mood_board_link_or_description}}
+          **Key Elements:** {{key_design_elements}}
+
+  - id: costumes
+    title: Costumes
+    repeatable: true
+    elicit: true
+    sections:
+      - id: costume_entry
+        title: "Character: {{character_name}}"
+        template: |
+          ### {{character_name}}
+          **Style:** {{character_style_description}}
+          **Color Palette:** {{character_color_palette}}
+          **Key Costumes:** {{key_costumes_list}}
+
+  - id: props
+    title: Key Props
+    repeatable: true
+    elicit: true
+    sections:
+      - id: prop_entry
+        title: "Prop: {{prop_name}}"
+        template: |
+          ### {{prop_name}}
+          **Description:** {{prop_description}}
+          **Function in Story:** {{prop_function}}
+          **Visual Reference:** {{prop_visual_reference}}

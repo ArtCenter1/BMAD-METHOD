@@ -1,0 +1,57 @@
+workflow:
+  id: feature-film-pre-production
+  name: Feature Film Pre-Production Workflow
+  description: >-
+    A comprehensive workflow for the pre-production of a feature film, from a locked script to a shoot-ready plan.
+  phases:
+    breakdown_and_vision:
+      - agent: director
+        task: create-doc
+        input: screenplay.md
+        output: directors-vision.md
+      - agent: producer
+        task: create-doc # This would be a more specific task in a real scenario
+        input: screenplay.md
+        output: script-breakdown.md
+    planning_and_budgeting:
+      - agent: producer
+        task: develop-budget
+        input:
+          - script-breakdown.md
+          - directors-vision.md
+        output: film-budget.md
+      - agent: producer
+        task: create-doc # This would be a more specific task
+        input: script-breakdown.md
+        output: production-schedule.md
+    design_and_visualization:
+      - agent: production-designer
+        task: design-production
+        input:
+          - screenplay.md
+          - directors-vision.md
+        output: production-design-brief.md
+      - agent: cinematographer
+        task: create-doc # This would be a more specific task
+        input:
+          - screenplay.md
+          - directors-vision.md
+        output: lookbook.md
+    shot_planning:
+      - agent: director
+        task: create-shot-list
+        input: screenplay.md
+        output: shot-list.md
+      - agent: storyboard-artist
+        task: create-storyboards
+        input:
+          - screenplay.md
+          - shot-list.md
+        output: storyboards.md
+    final_prep:
+      - agent: producer
+        task: execute-checklist
+        input: pre-production-readiness-checklist.md
+        output: pre-production-signoff.md
+  completion_criteria:
+    - pre-production-signoff.md exists

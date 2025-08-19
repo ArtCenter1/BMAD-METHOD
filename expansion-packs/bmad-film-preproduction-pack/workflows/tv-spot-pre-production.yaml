@@ -1,0 +1,31 @@
+workflow:
+  id: tv-spot-pre-production
+  name: TV Spot Pre-Production Workflow
+  description: >-
+    A rapid workflow for planning a short TV commercial spot.
+  phases:
+    concept_and_boarding:
+      - agent: director
+        task: create-doc
+        input: ad-script.md
+        output: directors-treatment.md
+      - agent: storyboard-artist
+        task: create-storyboards
+        input: ad-script.md
+        output: ad-storyboards.md
+    logistics:
+      - agent: producer
+        task: develop-budget
+        input: ad-script.md
+        output: ad-budget.md
+      - agent: producer
+        task: create-doc # This would be a more specific task
+        input: ad-script.md
+        output: ad-shoot-schedule.md
+    final_prep:
+      - agent: producer
+        task: execute-checklist
+        input: pre-production-readiness-checklist.md
+        output: ad-pre-production-signoff.md
+  completion_criteria:
+    - ad-pre-production-signoff.md exists
