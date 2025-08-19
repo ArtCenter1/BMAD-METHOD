@@ -6,11 +6,11 @@ workflow:
   phases:
     breakdown_and_vision:
       - agent: director
-        task: create-doc
+        task: create-directors-vision # NEW: Included in film pack
         input: screenplay.md
         output: directors-vision.md
       - agent: producer
-        task: create-doc # This would be a more specific task in a real scenario
+        task: create-script-breakdown # NEW: Included in film pack
         input: screenplay.md
         output: script-breakdown.md
     planning_and_budgeting:
@@ -21,7 +21,7 @@ workflow:
           - directors-vision.md
         output: film-budget.md
       - agent: producer
-        task: create-doc # This would be a more specific task
+        task: create-production-schedule # NEW: Included in film pack
         input: script-breakdown.md
         output: production-schedule.md
     design_and_visualization:
@@ -32,7 +32,7 @@ workflow:
           - directors-vision.md
         output: production-design-brief.md
       - agent: cinematographer
-        task: create-doc # This would be a more specific task
+        task: create-lookbook # NEW: Included in film pack
         input:
           - screenplay.md
           - directors-vision.md

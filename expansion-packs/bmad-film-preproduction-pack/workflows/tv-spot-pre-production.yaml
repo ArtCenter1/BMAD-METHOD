@@ -6,7 +6,7 @@ workflow:
   phases:
     concept_and_boarding:
       - agent: director
-        task: create-doc
+        task: create-directors-treatment # NEW: Included in film pack
         input: ad-script.md
         output: directors-treatment.md
       - agent: storyboard-artist
@@ -19,7 +19,7 @@ workflow:
         input: ad-script.md
         output: ad-budget.md
       - agent: producer
-        task: create-doc # This would be a more specific task
+        task: create-production-schedule # NEW: Included in film pack
         input: ad-script.md
         output: ad-shoot-schedule.md
     final_prep:

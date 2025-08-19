@@ -1,0 +1,70 @@
+---
+template:
+  id: series-bible-tmpl
+  name: Series Bible
+  version: 1.0
+  description: A template for creating a comprehensive series bible for a TV show.
+  output:
+    format: markdown
+    filename: "{{series_title}}-series-bible.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: header
+    title: "Series Bible: {{series_title}}"
+    instruction: "Provide the title of the series."
+    elicit: true
+
+  - id: overview
+    title: "Overview"
+    instruction: "Provide the high-level overview of the series."
+    template: |
+      ## Overview
+      **Logline:** {{logline}}
+      **Tone and Style:** {{tone_and_style}}
+      **Target Audience:** {{target_audience}}
+    elicit: true
+
+  - id: world
+    title: "The World"
+    instruction: "Describe the world of the show, its rules, and key locations."
+    template: |
+      ## The World
+      {{world_description}}
+    elicit: true
+
+  - id: characters
+    title: "Main Characters"
+    instruction: "For each main character, provide a detailed profile."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: character_entry
+        title: "Character: {{character_name}}"
+        template: |
+          ### {{character_name}}
+          **Description:** {{character_description}}
+          **Backstory:** {{character_backstory}}
+          **Goals & Motivations:** {{character_goals}}
+          **Season 1 Arc:** {{character_arc}}
+        elicit: true
+
+  - id: season_one
+    title: "Season One"
+    instruction: "Outline the major plot points for the first season."
+    template: |
+      ## Season One Arc
+      {{season_one_arc_description}}
+    elicit: true
+
+  - id: future_seasons
+    title: "Future Seasons"
+    instruction: "Briefly sketch out ideas for future seasons."
+    template: |
+      ## Future Seasons
+      {{future_seasons_ideas}}
+    elicit: true
+...

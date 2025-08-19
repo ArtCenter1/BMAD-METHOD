@@ -1,0 +1,50 @@
+---
+template:
+  id: script-breakdown-tmpl
+  name: Script Breakdown Sheet
+  version: 1.0
+  description: A template for creating a detailed script breakdown by scene.
+  output:
+    format: markdown
+    filename: "{{film_title}}-script-breakdown.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: header
+    title: "Script Breakdown: {{film_title}}"
+    instruction: "Provide the film title."
+    elicit: true
+
+  - id: scenes
+    title: "Scene Breakdowns"
+    instruction: "For each scene, provide the breakdown details."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: scene_entry
+        title: "Scene {{scene_number}}: {{scene_slugline}}"
+        template: |
+          ---
+          ### Scene {{scene_number}}: {{scene_slugline}}
+          **Page:** {{page_number}} | **Length:** {{page_length_eighths}}/8 pages
+
+          **Summary:**
+          {{scene_summary}}
+
+          | Element | Details |
+          |---|---|
+          | **Characters** | {{characters_list}} |
+          | **Props** | {{props_list}} |
+          | **Wardrobe** | {{wardrobe_notes}} |
+          | **Makeup/Hair** | {{makeup_hair_notes}} |
+          | **Set Dressing** | {{set_dressing_notes}} |
+          | **Sound** | {{sound_notes}} |
+          | **Stunts** | {{stunts_notes}} |
+          | **Special Effects** | {{vfx_sfx_notes}} |
+          | **Vehicles/Animals** | {{vehicles_animals_notes}} |
+          | **Notes** | {{general_notes}} |
+        elicit: true
+...

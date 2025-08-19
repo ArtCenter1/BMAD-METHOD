@@ -1,0 +1,55 @@
+---
+template:
+  id: directors-treatment-tmpl
+  name: Director's Treatment
+  version: 1.0
+  description: A template for creating a director's treatment for a commercial.
+  output:
+    format: markdown
+    filename: "{{project_name}}-directors-treatment.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: header
+    title: "Director's Treatment: {{project_name}}"
+    instruction: "Provide the project name."
+    elicit: true
+
+  - id: concept
+    title: "Concept"
+    instruction: "Provide a one-paragraph summary of the core concept."
+    template: |
+      ## Concept
+      {{concept_summary}}
+    elicit: true
+
+  - id: approach
+    title: "Visual Approach"
+    instruction: "Describe the visual style, tone, and execution."
+    template: |
+      ## Visual Approach
+      **Style:** {{visual_style}}
+      **Tone:** {{tone}}
+      **Pacing:** {{pacing}}
+    elicit: true
+
+  - id: mood_board
+    title: "Mood Board"
+    instruction: "Provide a link to a mood board or reference images."
+    template: |
+      ## Mood Board
+      ![Mood Board Reference]({{mood_board_image_url}})
+      *{{mood_board_caption}}*
+    elicit: true
+
+  - id: conclusion
+    title: "Closing Statement"
+    instruction: "Provide a brief closing statement to summarize the vision."
+    template: |
+      ## Closing Statement
+      {{closing_statement}}
+    elicit: true
+...

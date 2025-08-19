@@ -1,0 +1,44 @@
+---
+template:
+  id: production-schedule-tmpl
+  name: Production Schedule
+  version: 1.0
+  description: A template for creating a day-by-day shooting schedule.
+  output:
+    format: markdown
+    filename: "{{film_title}}-production-schedule.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: header
+    title: "Production Schedule: {{film_title}}"
+    instruction: "Provide the film title and total shoot days."
+    template: |
+      # Production Schedule: {{film_title}}
+      **Total Shoot Days:** {{total_shoot_days}}
+    elicit: true
+
+  - id: shooting_days
+    title: "Shooting Days"
+    instruction: "For each shooting day, provide the schedule details."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: day_entry
+        title: "Day {{day_number}} of {{total_shoot_days}}"
+        template: |
+          ---
+          ## Day {{day_number}} - {{date}}
+          **Location:** {{location}}
+          **Cast on Call:** {{cast_on_call_list}}
+
+          | Scene(s) | Page Count | Estimated Time | Notes |
+          |---|---|---|---|
+          | {{scenes_to_shoot_table}} | | | |
+
+          **Day Notes:** {{day_notes}}
+        elicit: true
+...

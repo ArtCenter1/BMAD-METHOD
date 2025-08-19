@@ -1,0 +1,74 @@
+---
+template:
+  id: directors-vision-tmpl
+  name: Director's Vision
+  version: 1.0
+  description: A template for articulating the director's creative vision for a film.
+  output:
+    format: markdown
+    filename: "{{film_title}}-directors-vision.md"
+
+workflow:
+  elicitation: true
+  allow_skip: false
+
+sections:
+  - id: header
+    title: "Director's Vision: {{film_title}}"
+    instruction: "Provide the film title."
+    elicit: true
+
+  - id: logline
+    title: "Logline"
+    instruction: "Provide the one-sentence summary of the film."
+    template: |
+      ## Logline
+      {{logline_text}}
+    elicit: true
+
+  - id: themes
+    title: "Core Themes"
+    instruction: "Describe the central themes and ideas of the film."
+    template: |
+      ## Core Themes
+      {{themes_description}}
+    elicit: true
+
+  - id: tone
+    title: "Tone & Mood"
+    instruction: "Describe the overall tone and mood. What should the audience feel? (e.g., suspenseful, comedic, elegiac)"
+    template: |
+      ## Tone & Mood
+      {{tone_description}}
+    elicit: true
+
+  - id: visual_language
+    title: "Visual Language"
+    instruction: "Describe the intended visual style."
+    template: |
+      ## Visual Language
+      **Cinematography:** {{cinematography_style}}
+      **Color Palette:** {{color_palette}}
+      **Pacing:** {{editing_pace}}
+    elicit: true
+
+  - id: character_arcs
+    title: "Key Character Arcs"
+    instruction: "Briefly describe the emotional journey of the main characters."
+    repeatable: true
+    elicit: true
+    sections:
+      - id: character_arc_entry
+        title: "Character: {{character_name}}"
+        template: |
+          ### {{character_name}}
+          {{arc_description}}
+
+  - id: references
+    title: "Inspirational References"
+    instruction: "List any films, art, or music that serve as inspiration."
+    template: |
+      ## Inspirational References
+      {{references_list}}
+    elicit: true
+...

@@ -205,3 +205,83 @@ The Creative Writing extension maintains compatibility with core BMad features:
 5. **Iterate Freely**: First drafts are for discovery
 
 Remember: BMad Creative Writing provides structure to liberate creativity, not constrain it.
+
+## Film Pre-Production Knowledge
+
+This section provides domain-specific knowledge for the film pre-production agents.
+
+### The Director's Role
+
+The Director is the primary creative leader of the film. Their role is to interpret the screenplay and bring it to life on screen, guiding the artistic and dramatic aspects of the production.
+
+**Key Responsibilities:**
+- **Vision:** Establish and maintain a clear creative vision for the film.
+- **Performance:** Guide actors to deliver compelling and authentic performances.
+- **Visuals:** Collaborate with the Cinematographer and Production Designer to define the film's visual language.
+- **Pacing:** Control the rhythm and flow of the story.
+
+**Best Practices:**
+- **Communicate Clearly:** A director must be able to clearly articulate their vision to the entire cast and crew.
+- **Be Decisive:** Make clear and confident decisions to keep the production moving forward.
+- **Trust Your Team:** Empower department heads to do their best work.
+
+### The Producer's Role
+
+The Producer is the logistical and financial leader of the film. They are responsible for turning the director's creative vision into a tangible and financially viable project.
+
+**Key Responsibilities:**
+- **Budgeting:** Create and manage the production budget.
+- **Scheduling:** Develop and maintain the production schedule.
+- **Hiring:** Hire the cast and crew.
+- **Logistics:** Coordinate all the moving parts of the production.
+- **Problem-Solving:** Overcome the inevitable obstacles that arise.
+
+**Best Practices:**
+- **Be Organized:** Meticulous planning is key to a smooth production.
+- **Be Resourceful:** Find creative solutions to logistical and financial challenges.
+- **Protect the Vision:** Ensure the director has the resources they need, while staying on budget and on schedule.
+
+### The Cinematographer's (DP) Role
+
+The Cinematographer, or Director of Photography (DP), is the artist responsible for the visual look of the film. They use light, shadow, color, and composition to tell the story visually.
+
+**Key Responsibilities:**
+- **Visual Language:** Collaborate with the director to design the film's visual style.
+- **Lighting:** Design and execute the lighting plan for each scene.
+- **Camera:** Choose the cameras, lenses, and camera movements.
+- **Crew Management:** Lead the camera and lighting departments.
+
+**Best Practices:**
+- **Serve the Story:** Every visual choice should have a narrative purpose.
+- **Master the Tools:** Deep technical knowledge enables artistic expression.
+- **Collaborate:** Work closely with the director and production designer to create a cohesive look.
+
+### The Production Designer's Role
+
+The Production Designer is the architect of the film's physical world. They are responsible for everything the audience sees on screen that isn't an actor's performance.
+
+**Key Responsibilities:**
+- **World-Building:** Design and create the sets, locations, and overall environment.
+- **Costumes & Props:** Oversee the design and creation of costumes and key props.
+- **Visual Cohesion:** Ensure all visual elements are consistent and support the story.
+- **Art Department Management:** Lead the art department, including set decorators, costume designers, and prop masters.
+
+**Best Practices:**
+- **Think Thematically:** Use design to express the film's core themes.
+- **Attention to Detail:** Every object on screen can tell a story.
+- **Research:** Ground the design in reality, even in a fantasy setting.
+
+### The Storyboard Artist's Role
+
+The Storyboard Artist is a visual storyteller who translates the screenplay into a sequence of images. Their work is a crucial planning tool for the director and cinematographer.
+
+**Key Responsibilities:**
+- **Visualize the Script:** Create a shot-by-shot visual representation of the screenplay.
+- **Composition:** Plan the framing and composition of each shot.
+- **Pacing:** Help establish the rhythm and flow of a scene before it's shot.
+- **Communication:** Provide a clear visual blueprint for the production team.
+
+**Best Practices:**
+- **Clarity over Beauty:** The goal is clear communication, not a finished work of art.
+- **Think Like a Camera:** Understand lens choices, camera angles, and movement.
+- **Be Fast and Flexible:** Quickly iterate on ideas with the director.

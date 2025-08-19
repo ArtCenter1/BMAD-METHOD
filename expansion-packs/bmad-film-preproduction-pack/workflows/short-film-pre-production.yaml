@@ -6,7 +6,7 @@ workflow:
   phases:
     planning:
       - agent: director
-        task: create-doc
+        task: create-directors-vision # NEW: Included in film pack
         input: screenplay.md
         output: directors-vision.md
       - agent: producer
