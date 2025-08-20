@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Test Priorities Matrix
 
 Guide for prioritizing test scenarios based on risk, criticality, and business impact.

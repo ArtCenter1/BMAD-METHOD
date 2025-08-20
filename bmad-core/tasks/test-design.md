@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # test-design
 
 Create comprehensive test scenarios with appropriate test level recommendations for story implementation.

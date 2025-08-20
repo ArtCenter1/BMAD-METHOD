@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Game Development Story Definition of Done (DoD) Checklist
 
 ## Instructions for Developer Agent

@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Game Development Story Definition of Done Checklist
 
 ## Story Completeness

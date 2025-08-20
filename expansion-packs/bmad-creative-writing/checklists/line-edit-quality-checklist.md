@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # ------------------------------------------------------------
 
 # 4. Line‑Edit Quality Checklist

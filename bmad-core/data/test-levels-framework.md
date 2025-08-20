@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Test Levels Framework
 
 Comprehensive guide for determining appropriate test levels (unit, integration, E2E) for different scenarios.

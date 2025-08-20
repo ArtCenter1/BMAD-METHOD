@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # KB Mode Interaction Task
 
 ## Purpose

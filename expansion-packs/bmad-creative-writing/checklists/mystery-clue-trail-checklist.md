@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # ------------------------------------------------------------
 
 # 11. Mystery Clue Trail Checklist

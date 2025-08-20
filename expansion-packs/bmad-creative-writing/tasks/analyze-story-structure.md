@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Analyze Story Structure
 
 ## Purpose

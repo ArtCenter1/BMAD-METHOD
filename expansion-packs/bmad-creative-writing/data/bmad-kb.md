@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # BMad Creative Writing Knowledge Base
 
 ## Overview

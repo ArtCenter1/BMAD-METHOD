@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Infrastructure Review Task
 
 ## Purpose

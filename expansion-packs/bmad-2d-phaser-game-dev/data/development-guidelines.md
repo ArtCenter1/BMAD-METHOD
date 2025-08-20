@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Game Development Guidelines
 
 ## Overview

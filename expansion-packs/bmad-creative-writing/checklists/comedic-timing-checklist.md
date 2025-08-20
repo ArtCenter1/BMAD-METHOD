@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # ------------------------------------------------------------
 
 # 23. Comedic Timing & Humor Checklist

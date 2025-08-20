@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Document Sharding Task
 
 ## Purpose

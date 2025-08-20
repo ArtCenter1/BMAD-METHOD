@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Game Design Document Quality Checklist
 
 ## Document Completeness

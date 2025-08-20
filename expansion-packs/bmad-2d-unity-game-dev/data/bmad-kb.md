@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # BMad Knowledge Base - 2D Unity Game Development
 
 ## Overview

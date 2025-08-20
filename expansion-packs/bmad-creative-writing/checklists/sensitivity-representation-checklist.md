@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # ------------------------------------------------------------
 
 # 7. Sensitivity & Representation Checklist

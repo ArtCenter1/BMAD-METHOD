@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Validate Game Story Task
 
 ## Purpose

@@ -33,11 +33,6 @@ The Director interprets the screenplay and brings it to life on screen, guiding 
 - **Visuals:** Collaborate with the Cinematographer and Production Designer to define the film's visual language.
 - **Pacing:** Control the rhythm and flow of the story.
 
-**Best Practices:**
-- **Communicate Clearly:** A director must be able to clearly articulate their vision to the entire cast and crew.
-- **Be Decisive:** Make clear and confident decisions to keep the production moving forward.
-- **Trust Your Team:** Empower department heads to do their best work.
-
 ---
 
 ## The Producing Department
@@ -53,11 +48,6 @@ The Producer is responsible for turning the director's creative vision into a ta
 - **Hiring:** Hire the cast and crew.
 - **Logistics:** Coordinate all the moving parts of the production.
 - **Problem-Solving:** Overcome the inevitable obstacles that arise.
-
-**Best Practices:**
-- **Be Organized:** Meticulous planning is key to a smooth production.
-- **Be Resourceful:** Find creative solutions to logistical and financial challenges.
-- **Protect the Vision:** Ensure the director has the resources they need, while staying on budget and on schedule.
 
 ---
 
@@ -100,7 +90,6 @@ The Cinematographer, or Director of Photography (DP), is the artist responsible 
 - **Camera:** Choose the cameras, lenses, and camera movements.
 - **Crew Management:** Lead the camera and lighting departments.
 
-**Best Practices:**
-- **Serve the Story:** Every visual choice should have a narrative purpose.
-- **Master the Tools:** Deep technical knowledge enables artistic expression.
-- **Collaborate:** Work closely with the director and production designer to create a cohesive look.
+---
+
+This is a simplified overview. In a real production, these departments work in close collaboration, and their responsibilities often overlap.

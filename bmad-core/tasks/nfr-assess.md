@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # nfr-assess
 
 Quick NFR validation focused on the core four: security, performance, reliability, maintainability.

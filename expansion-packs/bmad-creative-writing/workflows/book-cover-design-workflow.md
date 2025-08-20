@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Book Cover Design Assets
 
 # ============================================================

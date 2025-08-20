@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Book Critic Agent Definition
 
 # -------------------------------------------------------

@@ -1,5 +1,3 @@
-<!-- Powered by BMAD™ Core -->
-
 # Create Brownfield Story Task
 
 ## Purpose
