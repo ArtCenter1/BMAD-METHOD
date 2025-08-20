@@ -41,7 +41,7 @@ npx bmad-method install
 2. Copy the folder into your BMad Method `expansion-packs/` directory:
 
 ```bash
-cp -r bmad-film-preproduction-pack/ ~/bmad-method/expansion-packs/
+cp -r bmad-film-preproduction/ ~/bmad-method/expansion-packs/
 ```
 
 3. Run the BMad installer or `bmad` CLI to register the pack.
