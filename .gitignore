@@ -14,6 +14,8 @@ npm-debug.log*
 # Build output
 build/*.txt
 web-bundles/
+dist/
+dist/
 
 # Environment variables
 .env
