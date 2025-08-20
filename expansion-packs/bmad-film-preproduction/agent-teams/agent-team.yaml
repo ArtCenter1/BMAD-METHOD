@@ -2,51 +2,18 @@ name: Film Pre-Production Team
 id: film-pre-production-team
 description: A complete team for film pre-production, from writing to planning.
 agents:
-  - id: director
-    roles:
-      - leader
-      - visionary
-  - id: producer
-    roles:
-      - project_manager
-      - facilitator
-  - id: cinematographer
-    roles:
-      - visual_expert
-  - id: production-designer
-    roles:
-      - world_builder
-  - id: storyboard-artist
-    roles:
-      - visual_planner
-  - id: narrative-designer
-    roles:
-      - narrative_architect
-  - id: plot-architect
-    roles:
-      - story_structure_expert
-  - id: world-builder
-    roles:
-      - setting_expert
-  - id: character-psychologist
-    roles:
-      - character_development_expert
-  - id: dialog-specialist
-    roles:
-      - dialog_writer
-  - id: genre-specialist
-    roles:
-      - genre_expert
-  - id: editor
-    roles:
-      - quality_assurance
-      - editor
-  - id: beta-reader
-    roles:
-      - feedback_provider
-  - id: book-critic
-    roles:
-      - reviewer
-  - id: cover-designer
-    roles:
-      - visual_artist
+  - director
+  - producer
+  - cinematographer
+  - production-designer
+  - storyboard-artist
+  - narrative-designer
+  - plot-architect
+  - world-builder
+  - character-psychologist
+  - dialog-specialist
+  - genre-specialist
+  - editor
+  - beta-reader
+  - book-critic
+  - cover-designer

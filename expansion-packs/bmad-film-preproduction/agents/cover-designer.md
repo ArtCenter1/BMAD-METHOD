@@ -34,11 +34,11 @@ commands:
   - exit: Exit persona
 dependencies:
   tasks:
-    - generate-cover-brief
-    - generate-cover-prompts
-    - assemble-kdp-package
+    - generate-cover-brief.md
+    - generate-cover-prompts.md
+    - assemble-kdp-package.md
   templates:
-    - cover-design-brief-tmpl
+    - cover-design-brief-tmpl.yaml
   checklists:
-    - kdp-cover-ready-checklist
+    - kdp-cover-ready-checklist.md
 ```

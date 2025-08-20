@@ -32,7 +32,7 @@ commands:
   - exit: Say goodbye as the Book Critic and abandon persona
 dependencies:
   tasks:
-    - critical-review # ensure this task exists; otherwise agent handles logic inline
+    - critical-review.md # ensure this task exists; otherwise agent handles logic inline
   checklists:
-    - genre-tropes-checklist # optional, enhances genre comparison
+    - genre-tropes-checklist.md # optional, enhances genre comparison
 ```
