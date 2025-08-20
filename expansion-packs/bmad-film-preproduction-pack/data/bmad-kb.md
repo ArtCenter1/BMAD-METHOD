@@ -2,6 +2,28 @@
 
 This knowledge base provides a guide to the roles and responsibilities in a comprehensive film pre-production workflow, from initial concept to a shoot-ready plan. The roles are organized by department.
 
+## How film pre-production works in real life
+
+Film pre-production is the planning phase that turns a script into a buildable, shootable plan. It's where creative choices meet logistics: ideas are tested for feasibility, costs are measured, and the production team creates the documents and assets the crew will use on set.
+
+Typical stages and who leads them:
+- Concept & development (Writer/Producer): shape the story, produce script drafts, and reach "script lock".
+- Breakdown & budgeting (Producer): break the script into elements (locations, cast, props), produce line-item budgets and multiple cost scenarios.
+- Scheduling & logistics (Producer/UPM): build a shooting schedule, stripboard, and day-out-of-days; plan travel, permits, and vendor bookings.
+- Design & previsualization (Director/Production Designer/DP/Storyboard Artist): lock tone, create lookbooks, storyboards, animatics, and lens/lighting tests.
+- Casting & rehearsals (Director/Casting Director): cast actors, run table reads and rehearsals, develop performance notes.
+- Tech scouts & tests (Head of Departments): visit locations, run camera and lighting tests, and finalize equipment lists.
+
+Common deliverables:
+- Script lock (final shooting script)
+- Budget (line-item and contingency scenarios)
+- Shooting schedule and call sheets
+- Shot lists, storyboards, and animatics
+- Prop/costume/asset lists and set build documents
+- Risk register, permits, and insurance
+
+Good pre-production minimizes risk on the shoot by resolving major creative and practical questions early, creating clear ownership for each deliverable, and keeping versioned records of decisions.
+
 ---
 
 ## The Writing Department
@@ -226,73 +248,245 @@ Remember: BMad Creative Writing provides structure to liberate creativity, not c
 
 ## The Directing Department
 
-The director is the primary creative authority on a film, responsible for the artistic vision and guiding the cast and crew.
+This department centers on the film's creative leadership and the collaborative work that turns script pages into filmed scenes. It expands the Director's remit into agent-driven workflows for vision development, shot-level decisions, and actor direction.
 
-### The Director's Role
-The Director interprets the screenplay and brings it to life on screen, guiding the artistic and dramatic aspects of the production.
+### The Director's Role (expanded)
 
-**Key Responsibilities:**
-- **Vision:** Establish and maintain a clear creative vision for the film.
-- **Performance:** Guide actors to deliver compelling and authentic performances.
-- **Visuals:** Collaborate with the Cinematographer and Production Designer to define the film's visual language.
-- **Pacing:** Control the rhythm and flow of the story.
+The Director interprets the screenplay and leads creative decisions across performance, staging, and visual storytelling. In the BMAD workflow, the Director agent acts as the film's creative director: consolidating input from writing, production, design, and camera agents into a single, defendable vision.
+
+Core responsibilities (how the Director agent helps):
+- Vision & tone: craft director statements, moodboards, and style references.
+- Performance direction: create actor briefs, rehearsal notes, and table-read agendas.
+- Scene blocking & staging: propose blocking diagrams and camera coverage plans.
+- Shot selection & sequence rhythm: prioritize coverage and select coverage percentages.
+- Collaboration: synthesize notes from the Cinematographer, Production Designer, and Storyboard Artist.
+
+Agent specializations and commands
+- `*director-vision` — generate a director's statement and stylistic references.
+- `*director-block` — propose blocking options and coverage strategies for a scene.
+- `*director-rehearse` — create rehearsal agendas and performance beats for actors.
+- `*director-note` — summarize director notes after read-throughs or production meetings.
+
+When to use the Director agent
+- Early concepting to lock tone and visual identity.
+- After script lock to prepare shot plans and rehearsal material.
+- During production prep to finalize coverage plans and actor direction.
+
+Templates & tools
+- Director's statement template (tone, themes, visual references, references list).
+- Block diagrams (text-to-diagram prompts for storyboard/animatic tools).
+- Rehearsal templates (scene objectives, emotional beats, physical actions).
+
+Workflows the Director participates in
+- Feature and short film pre-production workflows: vision → script breakdown → blocking → shotlist.
+- Screenplay-development workflow: collaborate with Plot Architect and Editor to resolve story problems affecting direction.
+
+Best practices
+1. Start with a one-paragraph creative brief that all departments reference.
+2. Use visual references (stills, clips) aggressively; agents map them to cinematic language.
+3. Lock actor intentions before finalizing blocking; intent drives movement.
+4. Keep shot decisions reversible until storyboard/tech scout confirms feasibility.
+
+Integration with core BMad
+- Director agent uses the same elicitation methods and slash commands as writing agents; it can call `*create-outline` and `*analyze-structure` to ensure directorial choices respect story mechanics.
+
+Quick start commands
+- `*director-vision <script/title>` — create a concise director's statement for the project.
+- `*director-block <scene-id>` — produce blocking options for a scene.
+
+Tips for success
+1. Share the Director agent's one-page brief with Production and Design early.
+2. Use the Director agent outputs as inputs to the Storyboard Artist and Cinematographer agents to avoid duplicated effort.
+
 
 ---
 
 ## The Producing Department
 
-The producing department manages the business, financial, and logistical aspects of the production.
+This department focuses on turning creative plans into executable schedules, budgets, and resource plans. The Producer agent provides structured financial and logistical workflows, risk assessments, and supplier/hiring briefs.
 
-### The Producer's Role
-The Producer is responsible for turning the director's creative vision into a tangible and financially viable project.
+### The Producer's Role (expanded)
 
-**Key Responsibilities:**
-- **Budgeting:** Create and manage the production budget.
-- **Scheduling:** Develop and maintain the production schedule.
-- **Hiring:** Hire the cast and crew.
-- **Logistics:** Coordinate all the moving parts of the production.
-- **Problem-Solving:** Overcome the inevitable obstacles that arise.
+The Producer agent balances creative priorities with financial and logistical constraints. It produces actionable budgets, call sheets, vendor lists, and contingency plans that keep the production on time and on budget.
+
+Core responsibilities (how the Producer agent helps):
+- Budget creation & breakdowns by department and line item.
+- Production scheduling and stripboard generation.
+- Vendor and crew hiring briefs with required skillsets and estimated rates.
+- Risk registers and contingency plans for weather, locations, and permits.
+- Resource allocation and cost-tracking templates.
+
+Agent specializations and commands
+- `*producer-budget` — generate a line-item budget draft from script breakdown.
+- `*producer-schedule` — create a shooting schedule and stripboard.
+- `*producer-call` — prepare call sheets and day-of logistics.
+- `*producer-risk` — produce a risk assessment and mitigation plan.
+
+When to use the Producer agent
+- Immediately after script lock for budget & schedule estimates.
+- During location scouting and vendor negotiations to produce comparison briefs.
+- In contingency planning and when production trade-offs are required.
+
+Templates & tools
+- Budget templates (feature/short/commercial variants).
+- Stripboard and day-out-of-days templates.
+- Call sheet generator prompts and standard forms.
+- Vendor comparison matrix template.
+
+Workflows the Producer participates in
+- Feature, short, TV, and spot pre-production workflows: breakdown → budget → schedule → hiring → logistics.
+- QA and readiness checks prior to first shoot day.
+
+Best practices
+1. Run multiple budget scenarios (low/medium/high) and mark non-negotiables.
+2. Tie each schedule decision to a budget or personnel constraint to make trade-offs explicit.
+3. Version budgets and schedules with change logs to track decisions.
+4. Maintain a living risk register and update it weekly.
+
+Integration with core BMad
+- The Producer agent exports structured data that can be ingested by task agents in the `tasks/` folder and used to auto-populate templates in checklists and workflows.
+
+Quick start commands
+- `*producer-budget <script-or-breakdown>` — draft a budget.
+- `*producer-schedule <script-or-days>` — create a preliminary shooting schedule.
+
+Tips for success
+1. Flag all creative requests with cost impacts for quick decision-making.
+2. Use the Producer agent outputs as attachments to planning meetings and call sheets.
+
 
 ---
 
 ## The Art Department
 
-The art department is responsible for the overall visual appearance of the film.
+This department translates creative ideas into physical and visual assets: sets, props, costumes, and previsual materials. In BMAD the Art agents produce design docs, style guides, prop lists, and workspace-ready asset briefs.
 
-### The Production Designer's Role
-The Production Designer is the architect of the film's physical world. They are responsible for everything the audience sees on screen that isn't an actor's performance.
+### Production Designer (expanded)
 
-**Key Responsibilities:**
-- **World-Building:** Design and create the sets, locations, and overall environment.
-- **Costumes & Props:** Oversee the design and creation of costumes and key props.
-- **Visual Cohesion:** Ensure all visual elements are consistent and support the story.
+The Production Designer agent turns script descriptions and the Director's brief into concrete design decisions and asset lists. It coordinates sets, props, costumes, and budgeting details with Production and Camera departments.
 
-### The Storyboard Artist's Role
-The Storyboard Artist is a visual storyteller who translates the screenplay into a sequence of images. Their work is a crucial planning tool for the director and cinematographer.
+Core responsibilities (how the Production Designer agent helps):
+- Visual world building: create lookbooks, palettes, and reference boards.
+- Set & location design briefs, including dimensional sketches and build vs. location notes.
+- Props and costume lists with sourcing and build estimates.
+- Continuity notes that tie to the shooting schedule and script pages.
 
-**Key Responsibilities:**
-- **Visualize the Script:** Create a shot-by-shot visual representation of the screenplay.
-- **Composition:** Plan the framing and composition of each shot.
-- **Pacing:** Help establish the rhythm and flow of a scene before it's shot.
+Agent specializations and commands
+- `*pd-lookbook` — generate a lookbook and palette based on script extracts.
+- `*pd-prop-list` — create an ordered prop list with importance and sourcing notes.
+- `*pd-setbrief` — produce a set design brief including space constraints and build complexity.
 
-### The Cover Designer's Role
-- **Note:** While primarily for literary works, the Cover Designer's skills in visual storytelling can be leveraged for creating posters and marketing materials.
-- **Responsibilities:** Visual storytelling, KDP compliance.
+When to use the Production Designer agent
+- After script lock and director visioning to create initial lookbooks.
+- During location scouting to assess build vs. dressing needs.
+- When building budgets for art department labor and materials.
+
+Templates & tools
+- Lookbook template (references, color swatches, texture notes).
+- Prop and costume tracking sheets.
+- Set build vs. location decision matrix.
+
+Best practices
+1. Prioritize props and set pieces that are story-significant early in the schedule.
+2. Reuse and adapt assets to reduce cost and speed builds.
+3. Keep continuity and prop masters synchronized with the script breakdown.
+
+Integration with core BMad
+- Production Designer outputs feed directly into the `tasks/` and `checklists/` workflows to populate procurement and build tasks.
+
+Quick start commands
+- `*pd-lookbook <script-or-scene>` — create a visual reference pack for a scene.
+- `*pd-prop-list <script-or-scene>` — produce a prioritized prop list.
+
+Tips for success
+1. Keep build timelines aligned with the Producer's schedule to avoid late changes.
+2. Share early thumbnails with Director and DP to validate designs quickly.
+
+### Storyboard Artist (expanded)
+
+The Storyboard Artist agent converts scene descriptions, director notes, and blocking suggestions into shot sequences, compositions, and animatic-ready frames.
+
+Core responsibilities (how the Storyboard Artist agent helps):
+- Translate pages to panels: create shot lists and storyboard panels with framing notes.
+- Suggest camera coverage and movement that supports the Director's emotional intent.
+- Provide animatic guidance: suggest pacing and cut timings for rough previsualization.
+
+Agent specializations and commands
+- `*sb-board <scene-id>` — create a storyboard breakdown with panel descriptions and suggested lenses.
+- `*sb-animatic <scene-id>` — produce a timing-first animatic blueprint.
+- `*sb-coverage <scene-id>` — recommend camera coverage and alternate angles.
+
+When to use the Storyboard Artist agent
+- Immediately after blocking decisions are drafted to lock compositions.
+- During tech scouts and camera rehearsals to finalize framings.
+
+Templates & tools
+- Storyboard panel template (thumbnail, action, dialogue, camera notes).
+- Animatic timing sheet.
+- Lens and coverage quick-reference chart.
+
+Best practices
+1. Create low-fidelity thumbnails first; iterate to save time.
+2. Map storyboard panels to script line numbers for easy cross-reference.
+3. Use storyboard outputs to drive shot list generation and assist the DP.
+
+Integration with core BMad
+- Storyboard panels and animatic blueprints become inputs to the `screenplay-development` and `feature-film-pre-production` workflows, reducing ambiguity in shot planning.
+
+Quick start commands
+- `*sb-board <scene-id>` — generate storyboard thumbnails and camera notes.
+- `*sb-coverage <scene-id>` — create a coverage plan to hand to the DP.
+
+Tips for success
+1. Keep scenes modular; storyboards that cleanly map to shot lists are easier to shoot and log.
+2. Reuse storyboard templates across episodes/units to keep visual language consistent.
 
 ---
 
 ## The Camera Department
 
-The camera department is responsible for capturing the film's images.
+This department covers image-making: lenses, lighting, camera movement, and the technicalization of the Director's vision. The Camera agents create shot lists, equipment lists, lighting diagrams, and camera call sheets.
 
-### The Cinematographer's (DP) Role
-The Cinematographer, or Director of Photography (DP), is the artist responsible for the visual look of the film. They use light, shadow, color, and composition to tell the story visually.
+### Cinematographer / DP (expanded)
 
-**Key Responsibilities:**
-- **Visual Language:** Collaborate with the director to design the film's visual style.
-- **Lighting:** Design and execute the lighting plan for each scene.
-- **Camera:** Choose the cameras, lenses, and camera movements.
-- **Crew Management:** Lead the camera and lighting departments.
+The Cinematographer agent collaborates with the Director and Production Designer to prescribe lenses, lighting setups, and camera movement that realize the desired tone and texture of the film.
+
+Core responsibilities (how the DP agent helps):
+- Camera package selection: recommend cameras, lenses, and formats per scene.
+- Lighting plans: propose lighting diagrams and unit setups.
+- Shot list optimization: refine storyboard panels into efficient, shootable shot lists.
+- Technical notes: suggest grip/rigging and VFX-friendly coverage.
+
+Agent specializations and commands
+- `*dp-package <project-or-scene>` — recommend camera and lens packages with trade-offs.
+- `*dp-lighting <scene-id>` — create lighting diagrams and suggested setups.
+- `*dp-shotlist <scene-id>` — produce a shot list aligned to the storyboard and director notes.
+
+When to use the DP agent
+- During preproduction to finalize camera packages and lens choices.
+- When creating lighting plans for complex interiors or night exterior scenes.
+- Before tech scouts to reconcile design constraints with camera requirements.
+
+Templates & tools
+- Camera package comparison sheet (cost vs. aesthetic vs. workflow).
+- Lighting diagram templates for interior/exterior setups.
+- Shot list generator with columns for lens, coverage, duration, and notes.
+
+Best practices
+1. Test lens and camera combos on reference footage when possible.
+2. Keep light plots simple and modular — label every circuit and key source.
+3. Pair DP notes with storyboard frames and continuity trackers.
+
+Integration with core BMad
+- DP outputs integrate with Producer and PD sheets for equipment rental, crew calls, and budget items. Shot lists map back to schedules and call sheets.
+
+Quick start commands
+- `*dp-package` — get camera and lens recommendations for your project.
+- `*dp-shotlist <scene-id>` — create a DP-aligned shot list.
+
+Tips for success
+1. Share test footage and reference clips with the Director early to align on look.
+2. Use DP-generated shot lists to pre-visualize and reduce on-set time.
 
 ---
 
